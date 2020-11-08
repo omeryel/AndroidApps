@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="I am an Android Developer"
+        android:textSize="54sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"/>
+
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="#ff05"
+        android:onClick="btnClicked"
+        android:text="Click Here!!"
+        android:textColor="#555" />
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="173dp"
+        android:layout_below="@id/textview"
+        android:hint="Please enter your name !!"
+        />
+
+    <EditText
+        android:id="@+id/numberBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Please enter your phone number:"
+        android:inputType="phone"
+        android:layout_below="@id/nameBox"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fruit"
+         />
+</RelativeLayout>
